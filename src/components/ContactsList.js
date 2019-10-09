@@ -7,7 +7,6 @@ export class ContactsList extends Component {
 		return (
 			<React.Fragment>
 				    <ContactsListRow />
-					
 			</React.Fragment>
 		)
 	}
