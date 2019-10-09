@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TdList from './components/TdList'
+import ContactsList from './components/ContactsList'
 
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
         return (
             <div className="container">
 		      <table>
-		      	<caption>ContactList</caption>
+		      	<caption>ContactsList</caption>
 		      	<thead>
 		      		<tr>
 					    <th>Name</th>
@@ -31,9 +31,8 @@ class App extends Component {
 		      	</thead>
 		      	<tbody>
 		      	<tr>
-		      		<TdList trFirstRow={this.state.firstRow} />
-		      	</tr>
-		  			
+		      		<ContactsList trFirstRow={this.state.firstRow} />
+		      	</tr>	
 		  		</tbody>
 		      </table>
       		</div>
