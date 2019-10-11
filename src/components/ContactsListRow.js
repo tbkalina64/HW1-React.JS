@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 export class ContactsListRow extends Component {
 
 	render () {
-		const {firstRow} = this.props;
+		const { cols } = this.props;
 		return (
 			<React.Fragment>
-				<td>{this.props.firstName}</td>
-					<td></td>
-					<td></td>
-					<td></td>
+				<td >{cols.firstName} </td>
+				<td >{cols.lastName} </td>
+				<td >{cols.age} </td>
+				<td >{cols.phone} </td>
 			</React.Fragment>
 		)
 	}
