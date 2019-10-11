@@ -3,10 +3,15 @@ import ContactsListRow from './ContactsListRow';
 
 export class ContactsList extends Component {
 	render() {
-		const {trFirstRow} = this.props;
+		const {trFirstContactRow} = this.props;
 		return (
 			<React.Fragment>
-				    <ContactsListRow />
+				    {trFirstContactRow.map (cols => (
+					    	<tr key={cols.id}>
+					    		<ContactsListRow cols={ cols } />
+					    	</tr>
+				    	)) 
+				    }
 			</React.Fragment>
 		)
 	}
