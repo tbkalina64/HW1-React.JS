@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+th, td {
+	width:  100px;
+	border: 0.5px solid;
+  padding: 5px;
+}
+table {
+  border: 1px solid;
+}
