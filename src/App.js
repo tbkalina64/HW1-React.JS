@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ContactsList from './components/ContactsList'
 
-
 class App extends Component {
 	state = {
 		firstRow: [
@@ -33,7 +32,6 @@ class App extends Component {
 				age: 29,
 				phone: '0987635353'
 			}
-			
 		]
 	}
 
@@ -44,15 +42,15 @@ class App extends Component {
 		      	<caption>ContactsList</caption>
 		      	<thead>
 		      		<tr>
-					    <th>Name</th>
-					    <th>Sername</th>
-					    <th>Age</th>
-					    <th>Telephone</th>
-		  			</tr>
+					<th>Name</th>
+					<th>Sername</th>
+					<th>Age</th>
+					<th>Telephone</th>
+		  		</tr>
 		      	</thead>
 		      	<tbody>
 		      		<ContactsList trFirstContactRow={this.state.firstRow} />
-		  		</tbody>
+		  	</tbody>
 		      </table>
       		</div>
         )
