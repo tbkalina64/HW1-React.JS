@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 
 export class ContactsListRow extends Component {
 
-	render () {
+	render() {
 		const { cols } = this.props;
 		return (
 			<React.Fragment>
-				<td >{cols.firstName} </td>
-				<td >{cols.lastName} </td>
-				<td >{cols.age} </td>
-				<td >{cols.phone} </td>
+				<tr>
+					<td>{cols.firstName} </td>
+					<td>{cols.lastName} </td>
+					<td>{cols.age} </td>
+					<td>{cols.phone} </td>
+				</tr>
 			</React.Fragment>
 		)
 	}
